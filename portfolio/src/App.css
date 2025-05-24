@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+:root {
+    /* background-image: url('https://imgs.search.brave.com/Ft-GCqUFDz5eADJxJg2kOZxRcGPhWa288tidRcRFw3E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vOFltaC1K/MXNIUjdRVktNRFBJ/U1BPQnJwU1hITVpX/RXBzWkdXVU5QcmFw/US9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk1U/QTAvTXprMU9UYzRN/Qzl3YUc5MC9ieTlz/YjI1bmN5MXdaV0Zy/L0xXRjBMV0psWVhJ/dGJHRnIvWlMxc2Iy/NW5jeTF3WldGci9M/V0Z1WkMxbmJHRmph/V1Z5L0xXZHZjbWRs/TFhKbFpteGwvWTNS/cGJtY3RhVzR0WW14/MS9aUzFpWldGeUxX/eGhhMlV0L2IyNHRZ/UzFqWVd4dExtcHcv/Wno5elBUWXhNbmcy/TVRJbS9kejB3Sm1z/OU1qQW1ZejFTL2JF/ZFZaRU5KTVZneWJI/VjEvZUVKTGJuRjBT/VEEwVjI1cy9jVTg1/TVUxYU1GSlpaa3BQ/L1JubDRVMjlqUFE.jpeg'); */
+    /* object-fit: fill; */
+    /* object-position: center; */
+    /* background-repeat: no-repeat; */
+    font-family: "Poppins", sans-serif;
+    /* background-color: black; */
+
+}
+@keyframes nav-animator {
+    0% {
+        top: -100px;
+        width: 20%;
+        opacity: 0;
+    }
+    50% {
+        top: 0;
+        width: 60%;
+        opacity: 0.5;
+    }
+    100% {
+        top: 0;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+#navbar {
+    position: fixed;
+    animation-name: nav-animator;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}
